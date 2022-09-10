@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="accord_GN.css" rel="stylesheet" type="text/css">
+        <title>Construire des phrases</title>
+    </head>
+
+<body>
+	
+	<header class="titre">
+			<h1>Accords dans le Groupe Nominal</h1>
+			<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+				<form>			
+					<label></label>
+					<select name="niveau" id="niveau">
+						<option value="progression" selected="selected">Progression</option>
+						<option value="GNMF">1. Groupe Nominal, masculin, féminin</option>
+						<option value="GNSP">2. Groupe Nominal, singulier, pluriel</option>
+						<option value="GNGN">3. Groupe Nominal, genre et nombre</option>
+						<option value="GNAG">4. Groupe Nominal, genre de l'adjetif</option>
+						<option value="GNAN">5. Groupe Nominal, nombre de l'adjetif</option>
+					</select>
+				</form>
+				<button onclick="mise_a_zero()">Mise à zéro</button>
+				<button onclick="effacer()">Effacer/Mélanger</button>				
+			</div>			
+			
+	</header>
+	
+	<main>
+		<div id="input_bases"></div>
+		<div style="height: 40px; display: flex; justify-content: space-around; flex-wrap: wrap;">
+			<div style="background-color: #90EE90; width: 30%; font-size: 30px;">Déterminants</div>
+			<div style="background-color: #F8F794; width: 30%; font-size: 30px;">Adjectifs</div>
+			<div style="background-color: #9EEDF0; width: 30%; font-size: 30px;">noms communs</div>
+		</div>
+		<div style="background-color: white; height: 20px;"></div>
+		<div style="height: 40px; display: flex; justify-content: space-around; flex-wrap: wrap;">
+			<div id="input_bases1" style="display: flex; justify-content: space-around; flex-wrap: wrap; background-color: #90EE90; width: 30%; font-size: 30px;"></div>
+			<div id="input_bases3" style="display: flex; justify-content: space-around; flex-wrap: wrap; background-color: #F8F794; width: 30%; font-size: 30px;"></div>
+			<div id="input_bases2" style="display: flex; justify-content: space-around; flex-wrap: wrap; background-color: #9EEDF0; width: 30%; font-size: 30px;"></div>
+		</div>
+		<div style="background-color: white; height: 50px;"></div>
+		<p id="affichage_phrase"></p>
+		
+	</main>	
+						
+	<script src="accord_GN.js"></script>
+</body>
+
+</html>
